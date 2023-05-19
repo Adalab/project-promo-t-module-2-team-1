@@ -1,6 +1,10 @@
 @import 'core/variables';
 @import 'core/reset';
-@import 'components/code';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';
+@import "pages/create";
+@import "layout/mainlanding";
+@import "layout/createdesign";
+@import "layout/createfill";
+@import "layout/createshare";
