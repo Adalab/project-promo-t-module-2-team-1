@@ -1,5 +1,17 @@
-.page__header {
+.image {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  &__header{
+    height: 100vh;
+    width: 250px;
+    margin: 35px;
+    @include tablet () {
+      width: 420px;
+      
+  }
+  }
 }
