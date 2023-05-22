@@ -8,11 +8,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 40px;
     
 }
 
   &__text {
-    font-size: 0.9rem;
+    font-size: 0.87rem;
+    font-family: $font-text;
+    line-height: 1.25rem;
+    color: $color-text-footer;
+    opacity: 0.5;
   }
   &__image {
     width: 103px;
