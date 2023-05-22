@@ -1,14 +1,15 @@
 .image {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   
   
   &__header{
-    height: 100vh;
+   
     width: 250px;
     margin: 35px;
+    margin-top: 95px;
     @include tablet () {
       width: 420px;
       
