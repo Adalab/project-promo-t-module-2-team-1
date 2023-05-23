@@ -1,42 +1,90 @@
-.s1comparte{
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
-    border-bottom: 1px;
-    margin-bottom: 30px;
+
+.sectionshare{
+    width: 100%;
+    height: 30%;
+
+   
+    
 }
-.s1comparteP{
+
+
+.a1{
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    border-bottom: 5px;
+    margin-bottom: 30px;
+    margin-left: 61px;
+    margin-right: 60px;
+    align-items: center; 
+      
+
+}
+
+
+
+.a1__comparteP{
+    height: 50%;
     text-transform: uppercase;
     font-size: 1.125rem;
     color: #54585A;
+    background-color: aqua;
+    justify-content: flex-start;
+
+    
+
 }
-.btn{
+
+
+.a1__crear{
+
+    
     text-transform: uppercase;
     background-color: orange;
     width: 200px;
     height: 60px;
-    margin-left: 18%;
+    margin-left: 16%;
     margin-right: 30%;
     border-radius: 20px;
+    margin-top: 30px;
 }
-.s2creada{
+
+
+.a2creada{
+    height: 50%;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px;
-    }
-.s2creadaP{
+    border-bottom: 5px;
+    
+}
+
+.a2creada__P{
+
     font-size: 1.125rem;
     color:#54585a ;
+    margin-bottom: 20px;
+
 }
-.s2creadaL{
+.a2creada__L{
+
       color: orange;
+      margin-bottom: 20px;
 }
-.s2creadaB{
+
+.a2creada__B{
     width: 200px;
-    height: 60px;
-    margin-left: 2%;
+    height: 40px;
+    
     border-radius: 20px;
     background-color: lightblue;
+    margin-bottom: 20px;
 }
+
+
+
+
