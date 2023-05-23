@@ -1,5 +1,25 @@
-.card {
+.review {
      background-color: $color-bg-gradient-top;
      height: 457px;
+     display: flex;
+     flex-direction: column;
+    
+    align-items: center;
+.buttontrash {
+          width: 75px;
+          height: 30px;
+          
+          
+          border: solid 1px $color-secondary;
+          border-radius: 15px;
+          background-color: $color-bg-gradient-top;
+     }
+}
+.card {
+     background-color: $color-secondary;
+     width: 240px;
      
+}
+.fa-regular {
+     margin-right: 4px;
 }
