@@ -1,0 +1,42 @@
+.s1comparte{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    border-bottom: 1px;
+    margin-bottom: 30px;
+}
+.s1comparteP{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: #54585A;
+}
+.btn{
+    text-transform: uppercase;
+    background-color: orange;
+    width: 200px;
+    height: 60px;
+    margin-left: 18%;
+    margin-right: 30%;
+    border-radius: 20px;
+}
+.s2creada{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px;
+    }
+.s2creadaP{
+    font-size: 1.125rem;
+    color:#54585a ;
+}
+.s2creadaL{
+      color: orange;
+}
+.s2creadaB{
+    width: 200px;
+    height: 60px;
+    margin-left: 2%;
+    border-radius: 20px;
+    background-color: lightblue;
+}
