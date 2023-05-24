@@ -1,15 +1,35 @@
 .fieldset {
    width: 100%;
-   margin-top: 27px;
-   border-bottom: 1px solid;
-    
+   max-width: 767px;
+   margin-top: 27px;   
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    &_design {
+        display: flex;
+        flex-direction: row;
+    }
+    &_arrow {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.logo {
+    margin-left: 20px;
 }
 .title1 {
     margin-left: 21px;
     width: 65px;
     height: 24px;
     text-transform: uppercase;
-    color: #54585a;
+    color: $color-text;
+    font-family: $font-text;
     font-size: 1.125rem;
 
 }
@@ -22,7 +42,8 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    color: #54585a;
+    color: $color-text;
+    font-family: $font-text;
 
 }
 .box {
@@ -33,49 +54,66 @@
     margin-right: 20px;
     gap: 10px;
 }
-.table {
+.pallete1 {
     width: 90px;
     margin-bottom: 15px;
-    margin-top: 20px;   
+    margin-top: 20px;
+    &_darkgreen {
+        background-color: $color-subtitle;
+        width: 30px;
+        height: 25px;
+    } 
+    &_mediumgreen{
+        background-color: $color-accent-two; 
+    }
+    &_ligthgreen{
+        background-color: $color-border;
+    }  
     
 }
-.td_dark_green {
-    background-color: #114e4e;
-    width: 30px;
-    height: 25px;
-}
-.td_medium_green {
-    background-color: #438792;
 
-}
-.td_ligth_green {
-    background-color: #a2deaf;
-}
-.td_dark_red {
-    background-color: #420101;
-    width: 30px;
-    height: 25px;
-}
-.td_red {
-    background-color: #bd1010;
-}
-.td_orange {
-    background-color: #e95626;
-}
-.td_grey {
-    background-color: #3e5b65;
-    width: 30px;
-    height: 25px;
-}
-.td_yellow {
-    background-color: #eab052;
-}
-.td_blue {
-    background-color: #a0c0cf;
+.pallete2 {
+    width: 90px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    &_darkred {
+        background-color: $color-design-dark-red;
+        width: 30px;
+        height: 25px;;
+    } 
+    &_red{
+        background-color: $color-design-medium-red; 
+    }
+    &_orange{
+        background-color: $color-design-light-red;
+    }
 }
 
-.caja1{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.pallete3 {
+    width: 90px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    &_grey {
+        background-color: $color-design-dark-teal;
+        width: 30px;
+        height: 25px;
+    } 
+    &_yellow{
+        background-color: $color-design-medium-teal; 
+    }
+    &_blue{
+        background-color: $color-design-light-teal;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .fieldset {
+        max-width: 439px;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .fieldset {
+        max-width: 439px ;
+    }
 }
