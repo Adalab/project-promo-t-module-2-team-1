@@ -1,23 +1,66 @@
 .review {
-     background-color: $color-bg-gradient-top;
+     background: linear-gradient($color-bg-gradient-top, #dde9ed) ;
      height: 457px;
      display: flex;
      flex-direction: column;
     
-    align-items: center;
+    
 .buttontrash {
           width: 75px;
           height: 30px;
-          
-          
           border: solid 1px $color-secondary;
           border-radius: 15px;
           background-color: $color-bg-gradient-top;
+          margin-top: 38px;
+          margin-bottom: 20px;
+          margin-left: 45px;
      }
 }
 .card {
      background-color: $color-secondary;
      width: 240px;
+     margin-left: 45px;
+     &__title {
+          border-left: solid 3px $color-accent-two;
+          margin-top: 21px;
+          margin-bottom: 10px;
+          font-family: $font-subtitle;
+          &--name {
+               font-weight: bold;
+               margin-left: 15px;
+               line-height: 1.11rem;
+               font-size: 1.125rem;
+          }
+          &--text {
+               color: $color-text;
+               margin-left: 15px;
+               line-height: 1.25;
+               font-size: 1rem;
+          }
+     }
+     &__img {
+          width: 240px;
+          height: 200px;
+     }
+     &__links {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          margin-top: 12px;
+          margin-bottom: 12px;
+          margin-left: 20px;
+
+          
+          &--box {
+          width: 32px;
+          height: 32px;
+          border: solid 2px $color-border;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     }
      
 }
 .fa-regular {
