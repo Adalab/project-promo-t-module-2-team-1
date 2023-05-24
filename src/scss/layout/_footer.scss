@@ -1,8 +1,21 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  @include tablet () {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+  &__text {
+    font-size: 0.9rem;
+  }
+  &__image {
+    width: 103px;
+    margin: 12px;
+  }
 }

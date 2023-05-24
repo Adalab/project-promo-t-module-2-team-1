@@ -1,4 +1,5 @@
 @import 'core/variables';
+@import 'core/mixins';
 @import 'core/reset';
 @import 'layout/header';
 @import 'layout/footer';
@@ -8,3 +9,4 @@
 @import "layout/createdesign";
 @import "layout/createfill";
 @import "layout/createshare";
+@import "layout/card";
