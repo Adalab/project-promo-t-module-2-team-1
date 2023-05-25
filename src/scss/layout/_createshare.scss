@@ -1,85 +1,98 @@
 
-.a1{
+.fset{
 
     width: 100vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
     border-bottom: 5px;
-   /* margin-bottom: 30px;
-    margin-left: 61px;
-    margin-right: 60px;*/    
+     
 
 }
 
-.article-logo{
-    padding: 20px;
-}
-
-.subtitle{
-    padding: 20px;
-}
-
-
-
-.a1__comparte{
+.fset__comparte{
     text-transform: uppercase;
     font-size: 1.125rem;
     color: #54585A;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
-
-
 
 }
 
 
-.a1__crear{
+.article-logo{
+    padding: 10px;
+    margin-top: 20px ;
+}
+
+.subtitle{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+.fset__crear{
 
     
     text-transform: uppercase;
     background-color: orange;
     width: 200px;
     height: 60px;
-    margin-left: 16%;
+    margin-left: 18%;
     margin-right: 30%;
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 15%;
+    color: white;
 }
 
 
-.a2creada{
+.fa-regular{
+    padding: 5px;
+    color: #54585a;
+    font-size: 18px;
+}
+
+
+        /*art2*/
+
+.fset__creada{
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px;
+    
     
 }
 
-.a2creada__P{
+.tarjeta{
 
     font-size: 1.125rem;
     color:#54585a ;
     margin-bottom: 20px;
 
 }
-.a2creada__L{
+.link{
 
       color: orange;
       margin-bottom: 20px;
 }
 
-.a2creada__B{
+.bnttwitter{
     width: 200px;
     height: 40px;
-    
-    border-radius: 20px;
-    background-color: lightblue;
+    background-color: #00a0f5;
     margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
 }
 
+.fa-brands{
+        padding: 5px;
 
+}
 
 
