@@ -6,7 +6,8 @@
     flex-direction:column;
     justify-content: center;
     border-bottom: 5px;
-     
+    margin-left: 20px;
+    
 
 }
 
@@ -16,18 +17,23 @@
     color: #54585A;
     display: flex;
     flex-direction: row;
+    
 
 }
 
 
 .article-logo{
     padding: 10px;
-    margin-top: 20px ;
+    margin-top: 20px;
+    font-size: 0.8rem;
 }
 
 .subtitle{
     padding: 10px;
     margin-top: 20px;
+    font-family: $font-text;
+    font-size: 1.125rem;
+    font-weight: 600;
 }
 
 
@@ -35,14 +41,16 @@
 
 
 .fset__crear{
-
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fset__crear--button {
     text-transform: uppercase;
-    background-color: orange;
+    background-color: $color-accent;
     width: 200px;
     height: 60px;
-    margin-left: 18%;
-    margin-right: 30%;
+    border: none;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 15%;
@@ -104,6 +112,7 @@
     margin-bottom: 20px;
     border-radius: 5px;
     color: white;
+    border: none;
 }
 
 .fa-brands{

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
     text-align: center;
+    padding-bottom: 40px;
     &__section1 {
         margin-bottom: 20px;
         &--title {
@@ -35,6 +35,9 @@
         }
     }
     &__button {
+        
+        
+        text-align: center;
         background-color: $color-accent-two;
         color: $color-secondary;
         text-decoration: none;
@@ -44,6 +47,7 @@
         border-radius: 21px;
         font-size: 1rem;
         display: inline-block;
+        
         margin-top: 49px;
         @media screen and (min-width: 768px) {
                 margin-top: 186px;
@@ -59,6 +63,7 @@
 .article-text {
     color: $color-text;
     font-family: $font-subtitle;
+    font-size: 0.8rem;
 }
 
 
