@@ -1,6 +1,6 @@
 .fieldset {
    width: 100%;
-   max-width: 767px;
+   
    margin-top: 27px;   
 }
 .div1{
@@ -39,18 +39,6 @@
     }
 }
 
-/*
-.title1 {
-    margin-left: 21px;
-    /*width: 65px;
-    height: 24px;
-    text-transform: uppercase;
-    color: $color-text;
-    font-family: $font-text;
-    font-size: 1.125rem;
-
-
-*/
 .div2{
     margin-left: 39px;
     margin-right: 20px;
@@ -126,22 +114,17 @@
     }
 }
 
-@media screen and (min-width: 768px){
-    .fieldset {
-        max-width: 439px;
-    }
-    .div1 {
-        margin-left: 40px;
+// @media screen and (min-width: 768px){
+//     .fieldset {
+//         // max-width: 439px;
+//     }
+//     .div1 {
+//         margin-left: 40px;
         
-    }
-    .div2 {
-        margin-left: 39px;
-    }
+//     }
+//     .div2 {
+//         margin-left: 39px;
+//     }
 
-}
-@media screen and (min-width: 1024px){
-    .fieldset {
-        max-width: 439px ;
-        
-    }
-}
+// }
+

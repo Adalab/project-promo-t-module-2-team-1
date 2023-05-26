@@ -1,9 +1,17 @@
 .review {
      background: linear-gradient($color-bg-gradient-top, #dde9ed) ;
-     height: 457px;
+     min-height: 457px;
      display: flex;
      flex-direction: column;
-    
+     @include tablet () {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          min-height: 100%;
+          margin: 20px 40px 20px 0;
+         
+     }   
     
 .buttontrash {
           width: 75px;
@@ -14,12 +22,23 @@
           margin-top: 38px;
           margin-bottom: 20px;
           margin-left: 45px;
+          @include tablet () {
+               display: flex;
+               align-self: flex-start;
+               
+              
+          }
      }
 }
 .card {
      background-color: $color-secondary;
      width: 240px;
      margin-left: 45px;
+     @include tablet () {
+         margin-left: 0;
+         padding: 20px auto;
+         
+     } 
      &__title {
           border-left: solid 3px $color-accent-two;
           margin-top: 21px;

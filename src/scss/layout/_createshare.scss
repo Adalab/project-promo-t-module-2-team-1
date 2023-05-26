@@ -1,7 +1,7 @@
 
 .fset{
 
-    width: 100vw;
+    // width: 100vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -17,7 +17,17 @@
     color: $color-text;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-left: 20px;
+    &--containerOne{
+        display: flex;
+        flex-direction: row;  
+    }
+    &--containerTwo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
     
 
 }
@@ -26,7 +36,9 @@
 .article-logo{
     padding: 10px;
     margin-top: 20px;
-    font-size: 0.8rem;
+    font-size: 15px;
+    
+    
 }
 
 .subtitle{
@@ -47,43 +59,30 @@
     justify-content: center;
     border-bottom: 1px solid $color-line;
     
+    
 }
 .fset__crear--button {
     text-transform: uppercase;
     background-color: $color-accent;
-    width: 200px;
     height: 60px;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 30px;
     color: $color-secondary;
+    font-family: $font-text;
+    font-weight: 600;
     font-size: 1.125rem;
     height: 50px;
+    padding-right: 18px;
    
 }
-/*
-@media screen and (min-width:325px){
-
-    .fset__crear{
-
-        margin-left: 37.5px;
-
-    }
-
-}
-
-*/
-
-
-
-
-
 
 .fa-regular{
-    padding: 5px;
+    padding: 5px 5px 5px 18px;
     color: $color-text;
     font-size: 18px;
+    
 }
 
 

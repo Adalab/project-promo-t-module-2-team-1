@@ -1,0 +1,23 @@
+.mainContainer {
+    @include tablet () {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }  
+    &__card {
+        @include tablet () {
+            width: 50%;
+            
+
+            
+
+    }} 
+    &__pepino{
+        @include tablet () {
+           width: 50%; 
+           
+           
+           
+
+    }}     
+}
