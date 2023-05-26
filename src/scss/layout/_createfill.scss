@@ -1,13 +1,28 @@
 
 .principalbox{
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $color-line;
+    
     }
 
 .rellena{
     display:flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
     
     }
+.rellena__containerOne{
+    display: flex;
+    align-items: center;
+    font-family: $font-text;
+    font-size: 1.125rem;
+    
+    }
+.rellena__containerTwo{
+    margin-right: 20px;
+}
     
 .filllogo{
     position: relative;
@@ -36,7 +51,7 @@
     }
 
 .fill{
-    color:#54585a;
+    color: $color-text;
     text-transform:uppercase;
     font-size: 18px;
     font-weight: 600;
@@ -47,32 +62,40 @@
 }
 
 .filllabel{
-    color: #114e4e;
+    color: $color-subtitle;
     margin-bottom: 7px;
     margin-top: 20px;
     font-size: 14px;
+    font-family: $font-text;
+    font-size: 0.875rem;
 }
 
 .fillinputs{
-    border:1px solid #a2deaf;
+    border:1px solid $color-border;
     height:30px;
+    font-family: $font-text;
+    font-size: 0.875rem;
+    color: $color-text-placeholder;
     }
 
 #image{
     min-width:140px;
     border:none;
     border-radius: 3px;
-    background-color:#e17334 ;
-    color:white;
+    background-color: $color-accent;
+    color: $color-secondary;
+    font-family: $font-text;
+    font-size: 0.875rem;
 }
 
 .divimage{
     display:flex;
     gap:20px;
+    
 }
 
 .imagediv{
-    border: 1px solid #a2deaf;
+    border: 1px solid $color-border;
     width:30px;
     height:30px;
 }
