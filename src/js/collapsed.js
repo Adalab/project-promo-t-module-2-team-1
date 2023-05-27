@@ -9,28 +9,36 @@ const shareContainer = document.querySelector('.js-share-container');
 const shareButton = document.querySelector('.js-share-button');
 const shareArticle = document.querySelector('.js-share-article');
 
-designBox.addEventListener('click', () => {
+function handlerClick1() {
   designContainer.classList.toggle('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
-});
+}
 
-fillBox.addEventListener('click', () => {
+designBox.addEventListener('click', handlerClick1);
+
+function handlerClick2(){
   fillContainer.classList.toggle('collapsed');
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
-});
+}
 
-shareBox.addEventListener('click', () => {
+fillBox.addEventListener('click', handlerClick2);
+
+function handlerClick3(){
   shareContainer.classList.toggle('collapsed');
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
-});
+}
 
+shareBox.addEventListener('click', handlerClick3);
+
+
+// parte de carolina
 shareButton.addEventListener('click', () => {
   shareArticle.classList.remove('collapsed');
-  shareButton.classList.remove('button-pushed')
+  shareButton.classList.remove('button-pushed');
 });
