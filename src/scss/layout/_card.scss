@@ -4,32 +4,36 @@
      display: flex;
      flex-direction: column;
      @include tablet () {
-          display: flex;
+          height: 100vh;
+          display: flex;     
+          flex-direction: column;
+          justify-content: center;          
           align-items: center;
-          align-content: center;
-          justify-content: center;
           min-height: 830px;
           margin: 20px 40px 20px 0;
           border-radius: 6px;
      }   
     
+}   
 .buttontrash {
-          width: 75px;
-          height: 30px;
-          border: solid 1px $color-secondary;
-          border-radius: 15px;
-          background-color: $color-bg-gradient-top;
-          margin-top: 38px;
-          margin-bottom: 20px;
-          margin-left: 45px;
-          @include tablet () {
-               display: flex;
-               align-self: flex-start;
+          
+     width: 75px;
+     height: 30px;
+     border: solid 1px $color-secondary;
+     border-radius: 15px;
+     background-color: $color-bg-gradient-top;
+     margin-top: 38px;
+     margin-bottom: 20px;
+     margin-left: 45px;
+     @include tablet () {
+          margin: 0;
                
-              
-          }
+          align-self: flex-start;
+               
+               
      }
 }
+
 .card {
      background-color: $color-secondary;
      width: 240px;
