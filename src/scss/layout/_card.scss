@@ -10,7 +10,7 @@
           justify-content: center;          
           align-items: center;
           min-height: 830px;
-          margin: 20px 40px 20px 0;
+          margin: 20px 40px 20px 30px;
           border-radius: 6px;
      }   
     
@@ -27,7 +27,7 @@
      margin-left: 45px;
      @include tablet () {
           margin: 0;
-               
+          margin-bottom: 15px;    
           align-self: flex-start;
                
                
@@ -39,9 +39,13 @@
      width: 240px;
      margin-left: 45px;
      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+     padding-top: 1px;
+     padding-bottom: 1px;
+     
      @include tablet () {
          margin-left: 0;
          padding: 20px auto;
+         
          
      } 
      &__title {
@@ -90,6 +94,7 @@
 .fa-trash-can {
      font-size: 12px;
      padding: 0;
+     margin-right: 6px;
      
 }
 .fa-envelope {
