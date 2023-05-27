@@ -63,7 +63,7 @@
 }
 .fset__crear--button {
     text-transform: uppercase;
-    background-color: $color-accent;
+    background-color: #d5d5d5;
     height: 60px;
     border: none;
     border-radius: 12px;
@@ -123,14 +123,20 @@
     color: $color-secondary;
     border: none;
     font-size: 0.875rem;
-    font-family: $font-text;
-
-    
+    font-family: $font-text;  
 }
 
 .fa-brands{
         padding: 5px;
 
 }
+
+.collapsed {
+    display: none;
+}
+.button-pushed {
+    background-color: $color-accent;
+}
+
 
 
