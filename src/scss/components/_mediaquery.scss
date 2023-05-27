@@ -2,6 +2,7 @@
     @include tablet () {
         display: flex;
         flex-direction: row-reverse;
+        background: linear-gradient($color-bg-landing, $color-secondary) ;
         
     }  
     &__card {

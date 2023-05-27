@@ -8,9 +8,9 @@
           align-items: center;
           align-content: center;
           justify-content: center;
-          min-height: 100%;
+          min-height: 830px;
           margin: 20px 40px 20px 0;
-         
+          border-radius: 6px;
      }   
     
 .buttontrash {
@@ -34,6 +34,7 @@
      background-color: $color-secondary;
      width: 240px;
      margin-left: 45px;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
      @include tablet () {
          margin-left: 0;
          padding: 20px auto;
@@ -84,4 +85,8 @@
 }
 .fa-regular {
      margin-right: 4px;
+}
+.fa-envelope {
+     position: relative;
+     left: 2px;
 }

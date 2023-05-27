@@ -22,6 +22,7 @@
     &--containerOne{
         display: flex;
         flex-direction: row;  
+        margin-left: 25px;
     }
     &--containerTwo {
         display: flex;
@@ -77,9 +78,9 @@
     padding-right: 18px;
    
 }
-
+/*
 .fa-regular{
-    padding: 5px 5px 5px 18px;
+    padding: 5px 5px 5px 5px;
     color: $color-text;
     font-size: 18px;
     

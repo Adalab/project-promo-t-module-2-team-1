@@ -1,0 +1,26 @@
+.imagecreate {
+  background-color: $color-bg-landing;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include tablet () {
+    background-color: $color-secondary;
+    justify-content: flex-start;
+    
+}
+  
+  
+  &__header{
+   
+    width: 250px;
+    margin: 35px;
+  
+    @include tablet () {
+      width: 210px;
+      margin: 40px;
+      
+      
+  }
+  }
+}
