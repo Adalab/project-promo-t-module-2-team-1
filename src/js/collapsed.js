@@ -8,21 +8,27 @@ const shareBox = document.querySelector('.js-share-box');
 const shareContainer = document.querySelector('.js-share-container');
 const shareButton = document.querySelector('.js-share-button');
 const shareArticle = document.querySelector('.js-share-article');
+const rotateDesign = document.querySelector('.js-arrow-design');
+const rotatefill = document.querySelector('.js-arrow-fill');
+const rotateShare = document.querySelector('.js-arrow-share');
 
 function handlerClick1() {
   designContainer.classList.toggle('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
+  rotateDesign.classList.toggle('rotate');
 }
 
 designBox.addEventListener('click', handlerClick1);
+
 
 function handlerClick2(){
   fillContainer.classList.toggle('collapsed');
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
+  rotatefill.classList.toggle('rotate');
 }
 
 fillBox.addEventListener('click', handlerClick2);
@@ -32,6 +38,7 @@ function handlerClick3(){
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   shareArticle.classList.add('collapsed');
+  rotateShare.classList.toggle('rotate');
 }
 
 shareBox.addEventListener('click', handlerClick3);
@@ -42,3 +49,5 @@ shareButton.addEventListener('click', () => {
   shareArticle.classList.remove('collapsed');
   shareButton.classList.remove('button-pushed');
 });
+
+

@@ -102,6 +102,9 @@
 .collapsed {
     display:none;
 }
+.rotate {
+    rotate: 180deg;
+}
 
 @media (min-width: 768px) {
 .principalbox {

@@ -61,6 +61,7 @@
     
     
 }
+
 .fset__crear--button {
     text-transform: uppercase;
     background-color: #d5d5d5;
@@ -136,6 +137,9 @@
 }
 .button-pushed {
     background-color: $color-accent;
+}
+.rotate {
+    rotate: 180deg;
 }
 
 
