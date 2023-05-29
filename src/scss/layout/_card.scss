@@ -49,7 +49,6 @@
          
      } 
      &__title {
-          border-left: solid 3px $color-accent-two;
           margin-top: 21px;
           margin-bottom: 10px;
           font-family: $font-subtitle;
@@ -60,7 +59,6 @@
                font-size: 1.125rem;
           }
           &--text {
-               color: $color-text;
                margin-left: 15px;
                line-height: 1.25;
                font-size: 1rem;
@@ -82,7 +80,6 @@
           &--box {
           width: 32px;
           height: 32px;
-          border: solid 2px $color-border;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -91,6 +88,58 @@
      }
      
 }
+
+.pallete_style1 {
+     .card__title {
+          border-left: solid 3px $color-subtitle;
+     }
+     .card__title--name {
+          color: $color-subtitle;
+     }
+     .card__title--text {
+          color: $color-accent-two;
+     }
+     .card__links--box {
+          border: solid 2px $color-border;
+     }
+}
+
+.pallete_style2 {
+     .card__title {
+          border-left: solid 3px $color-design-dark-red;
+     }
+
+     .card__title--name {
+          color: $color-design-dark-red;
+     }
+
+     .card__title--text {
+          color: $color-design-medium-red;
+     }
+
+     .card__links--box {
+          border: solid 2px $color-design-light-red;
+     }
+}
+
+.pallete_style3 {
+     .card__title {
+          border-left: solid 3px $color-design-dark-teal;
+     }
+
+     .card__title--name {
+          color: $color-design-dark-teal;
+     }
+
+     .card__title--text {
+          color: $color-design-medium-teal;
+     }
+
+     .card__links--box {
+          border: solid 2px $color-design-light-teal;
+     }
+}
+
 .fa-trash-can {
      font-size: 12px;
      padding: 0;
