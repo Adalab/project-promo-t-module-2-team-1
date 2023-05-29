@@ -25,3 +25,8 @@ function clickedcolour() {
 }
 
 btn.addEventListener('click', clickedcolour);
+
+
+/*<p class="tarjeta">La tarjeta ha sido creada:</p>
+                <p class="link">aqui aparece un link</p>
+                <button class="bnttwitter"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i> Compartir en twitter</button>*/
