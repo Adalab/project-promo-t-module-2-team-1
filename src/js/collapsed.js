@@ -6,8 +6,6 @@ const fillBox = document.querySelector('.js-fill-box');
 const fillContainer = document.querySelector('.js-fill-container');
 const shareBox = document.querySelector('.js-share-box');
 const shareContainer = document.querySelector('.js-share-container');
-const shareButton = document.querySelector('.js-share-button');
-const shareArticle = document.querySelector('.js-share-article');
 const rotateDesign = document.querySelector('.js-arrow-design');
 const rotatefill = document.querySelector('.js-arrow-fill');
 const rotateShare = document.querySelector('.js-arrow-share');
@@ -16,7 +14,6 @@ function handlerClick1() {
   designContainer.classList.toggle('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
-  shareArticle.classList.add('collapsed');
   rotateDesign.classList.toggle('rotate');
 }
 
@@ -27,7 +24,6 @@ function handlerClick2(){
   fillContainer.classList.toggle('collapsed');
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
-  shareArticle.classList.add('collapsed');
   rotatefill.classList.toggle('rotate');
 }
 
@@ -37,17 +33,12 @@ function handlerClick3(){
   shareContainer.classList.toggle('collapsed');
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
-  shareArticle.classList.add('collapsed');
   rotateShare.classList.toggle('rotate');
 }
 
 shareBox.addEventListener('click', handlerClick3);
 
 
-// parte de carolina
-shareButton.addEventListener('click', () => {
-  shareArticle.classList.remove('collapsed');
-  shareButton.classList.remove('button-pushed');
-});
+
 
 
