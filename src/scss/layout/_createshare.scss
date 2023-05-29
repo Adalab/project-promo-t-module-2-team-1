@@ -67,6 +67,7 @@
     
     
 }
+
 .fset__crear--button {
     text-transform: uppercase;
     background-color: $color-accent;
@@ -133,9 +134,7 @@
     color: $color-secondary;
     border: none;
     font-size: 0.875rem;
-    font-family: $font-text;
-
-    
+    font-family: $font-text;  
 }
 
 .fa-brands{
@@ -145,6 +144,15 @@
 .fa-address-card {
     margin: 18px;
 }
+
+.collapsed {
+    display: none;
+}
+.rotate {
+    rotate: 180deg;
+}
+
+
 
 .subtitle {
     margin-left: 20px;

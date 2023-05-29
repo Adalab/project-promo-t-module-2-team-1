@@ -1,7 +1,6 @@
 .fieldset {
    width: 100%;
-   
-   margin-top: 27px;   
+   margin-top: 27px;
 }
 .div1{
     display: flex;
@@ -20,6 +19,7 @@
     &_arrow {
         display: flex;
         flex-direction: row;
+       
     }
     &_title1 {
         display: flex;
@@ -32,7 +32,6 @@
         font-family: $font-text;
         font-size: 1.125rem;
         font-weight: 600;
-    
     }
     &_logo {
         position: relative;
@@ -71,14 +70,13 @@
         background-color: $color-subtitle;
         width: 30px;
         height: 25px;
-    } 
+    }
     &_mediumgreen{
-        background-color: $color-accent-two; 
+        background-color: $color-accent-two;
     }
     &_ligthgreen{
         background-color: $color-border;
-    }  
-    
+    }
 }
 
 .pallete2 {
@@ -89,9 +87,9 @@
         background-color: $color-design-dark-red;
         width: 30px;
         height: 25px;;
-    } 
+    }
     &_red{
-        background-color: $color-design-medium-red; 
+        background-color: $color-design-medium-red;
     }
     &_orange{
         background-color: $color-design-light-red;
@@ -106,13 +104,20 @@
         background-color: $color-design-dark-teal;
         width: 30px;
         height: 25px;
-    } 
+    }
     &_yellow{
-        background-color: $color-design-medium-teal; 
+        background-color: $color-design-medium-teal;
     }
     &_blue{
         background-color: $color-design-light-teal;
     }
+}
+
+.collapsed {
+    display:none
+}
+.rotate {
+    rotate: 180deg;
 }
 
 // @media screen and (min-width: 768px){
@@ -121,7 +126,6 @@
 //     }
 //     .div1 {
 //         margin-left: 40px;
-        
 //     }
 //     .div2 {
 //         margin-left: 39px;
