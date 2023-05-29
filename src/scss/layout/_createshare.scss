@@ -67,6 +67,7 @@
     
     
 }
+
 .fset__crear--button {
     text-transform: uppercase;
     background-color: $color-accent;
@@ -84,16 +85,10 @@
     
    
 }
-/*
-.fa-regular{
-    padding: 5px 5px 5px 5px;
-    color: $color-text;
-    font-size: 18px;
-    
-}
 
 
-        /*art2*/
+
+        /*art*/
 
 .fset__creada{
     display: flex;
@@ -104,6 +99,15 @@
     font-size: 1.125rem;
     font-family: $font-text;
 }
+
+.fset__crearG{
+
+
+    background-color: #d5d5d5;
+    
+}
+
+
 
 .tarjeta{
 
@@ -130,9 +134,7 @@
     color: $color-secondary;
     border: none;
     font-size: 0.875rem;
-    font-family: $font-text;
-
-    
+    font-family: $font-text;  
 }
 
 .fa-brands{
@@ -142,6 +144,15 @@
 .fa-address-card {
     margin: 18px;
 }
+
+.collapsed {
+    display: none;
+}
+.rotate {
+    rotate: 180deg;
+}
+
+
 
 .subtitle {
     margin-left: 20px;
