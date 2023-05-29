@@ -15,6 +15,7 @@ function handlerClick1() {
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   rotateDesign.classList.toggle('rotate');
+
 }
 
 designBox.addEventListener('click', handlerClick1);
@@ -37,8 +38,4 @@ function handlerClick3(){
 }
 
 shareBox.addEventListener('click', handlerClick3);
-
-
-
-
 
