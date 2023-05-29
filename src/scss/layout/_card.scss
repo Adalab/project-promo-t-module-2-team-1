@@ -4,43 +4,51 @@
      display: flex;
      flex-direction: column;
      @include tablet () {
-          display: flex;
+          height: 100vh;
+          display: flex;     
+          flex-direction: column;
+          justify-content: center;          
           align-items: center;
-          align-content: center;
-          justify-content: center;
-          min-height: 100%;
-          margin: 20px 40px 20px 0;
-         
+          min-height: 830px;
+          margin: 20px 40px 20px 30px;
+          border-radius: 6px;
      }   
     
+}   
 .buttontrash {
-          width: 75px;
-          height: 30px;
-          border: solid 1px $color-secondary;
-          border-radius: 15px;
-          background-color: $color-bg-gradient-top;
-          margin-top: 38px;
-          margin-bottom: 20px;
-          margin-left: 45px;
-          @include tablet () {
-               display: flex;
-               align-self: flex-start;
+          
+     width: 75px;
+     height: 30px;
+     border: solid 1px $color-secondary;
+     border-radius: 15px;
+     background-color: $color-bg-gradient-top;
+     margin-top: 38px;
+     margin-bottom: 20px;
+     margin-left: 45px;
+     @include tablet () {
+          margin: 0;
+          margin-bottom: 15px;    
+          align-self: flex-start;
                
-              
-          }
+               
      }
 }
+
 .card {
      background-color: $color-secondary;
      width: 240px;
      margin-left: 45px;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+     padding-top: 1px;
+     padding-bottom: 1px;
+     
      @include tablet () {
          margin-left: 0;
          padding: 20px auto;
          
+         
      } 
      &__title {
-          border-left: solid 3px $color-accent-two;
           margin-top: 21px;
           margin-bottom: 10px;
           font-family: $font-subtitle;
@@ -51,7 +59,6 @@
                font-size: 1.125rem;
           }
           &--text {
-               color: $color-text;
                margin-left: 15px;
                line-height: 1.25;
                font-size: 1rem;
@@ -73,7 +80,6 @@
           &--box {
           width: 32px;
           height: 32px;
-          border: solid 2px $color-border;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -82,8 +88,65 @@
      }
      
 }
+
+.pallete_style1 {
+     .card__title {
+          border-left: solid 3px $color-subtitle;
+     }
+     .card__title--name {
+          color: $color-subtitle;
+     }
+     .card__title--text {
+          color: $color-accent-two;
+     }
+     .card__links--box {
+          border: solid 2px $color-border;
+     }
+}
+
+.pallete_style2 {
+     .card__title {
+          border-left: solid 3px $color-design-dark-red;
+     }
+
+     .card__title--name {
+          color: $color-design-dark-red;
+     }
+
+     .card__title--text {
+          color: $color-design-medium-red;
+     }
+
+     .card__links--box {
+          border: solid 2px $color-design-light-red;
+     }
+}
+
+.pallete_style3 {
+     .card__title {
+          border-left: solid 3px $color-design-dark-teal;
+     }
+
+     .card__title--name {
+          color: $color-design-dark-teal;
+     }
+
+     .card__title--text {
+          color: $color-design-medium-teal;
+     }
+
+     .card__links--box {
+          border: solid 2px $color-design-light-teal;
+     }
+}
+
 .fa-trash-can {
      font-size: 12px;
      padding: 0;
+     margin-right: 6px;
      
+}
+.fa-envelope {
+     position: relative;
+     left: 2px;
 }

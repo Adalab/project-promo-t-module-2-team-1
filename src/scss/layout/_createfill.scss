@@ -1,6 +1,8 @@
 
 .principalbox{
-    border-bottom: 1px solid $color-line;
+    padding-left: 40px;
+    padding-right: 11px;
+    padding-bottom: 10px;
     
     }
 
@@ -11,6 +13,9 @@
     justify-content: space-between;
     
     width: 100%;
+    border-bottom: 1px solid $color-line;
+    
+    
     
     }
 .rellena__containerOne{
@@ -18,6 +23,7 @@
     align-items: center;
     font-family: $font-text;
     font-size: 1.125rem;
+    
     
     }
 .rellena__containerTwo{
@@ -31,12 +37,12 @@
     font-size:12px;
 
 }
-.fa-sort-down{
+
 
   
     
     
-}
+
 .fillform{
     display:flex;
     justify-content: center;
@@ -46,8 +52,9 @@
 
 .divs{
     display:flex;
-    flex-direction: column;
+    flex-direction: column;    
     padding: 0px 19px 20px 20px;
+    
     }
 
 .fill{
@@ -108,7 +115,7 @@
 
 @media (min-width: 768px) {
 .principalbox {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right:11px;
     padding-bottom: 10px;
     }
@@ -117,6 +124,8 @@
     margin-top: 17px;
     margin-left: 25px;
     font-size: 13px;
+        margin-left: 20px;    
+    
 }
 .fillinputs{
     // max-width: 329px;
