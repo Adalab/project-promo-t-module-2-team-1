@@ -1,7 +1,7 @@
 
 .principalbox{
     padding-left: 40px;
-    padding-right: 11px;
+    
     padding-bottom: 10px;
     }
 
@@ -9,9 +9,8 @@
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid $color-line;
+    justify-content: space-between;  
+    margin-right: 20px;   
     }
 
 .rellena__containerOne{
@@ -22,9 +21,6 @@
     
     }
 
-.rellena__containerTwo{
-    margin-right: 20px;
-}
     
 .filllogo{
     position: relative;
@@ -109,11 +105,6 @@
 }
 
 @media (min-width: 768px) {
-.principalbox {
-    padding-left: 40px;
-    padding-right:11px;
-    padding-bottom: 10px;
-    }
 .filllogo {
     position: relative;
     margin-top: 17px;
@@ -128,11 +119,7 @@
 }
 
 @media (min-width: 1024px) {
-    .principalbox {
-        padding-left: 20px;
-        padding-right: 11px;
-        padding-bottom: 10px;
-    }
+    
 
     .fillinputs {
         // max-width: 329px;
