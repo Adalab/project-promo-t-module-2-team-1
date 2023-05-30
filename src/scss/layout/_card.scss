@@ -67,6 +67,8 @@
      &__img {
           width: 240px;
           height: 200px;
+         background-size:cover;
+         background-image: url("/assets/images/arenita.jpg"); 
      }
      &__links {
           display: flex;

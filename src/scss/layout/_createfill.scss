@@ -15,10 +15,11 @@
     }
 
 .rellena__containerOne{
-    display: flex;
+    display:flex;
     align-items: center;
     font-family: $font-text;
     font-size: 1.125rem;
+    
     }
 
 .rellena__containerTwo{
@@ -74,25 +75,31 @@
     color: $color-text-placeholder;
     }
 
-#image{
-    min-width:140px;
-    border:none;
+.imagebtn{
+    display:none;
+    }
+.buttonimage{
+    display:flex;
+    }
+
+.divimage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    border: none;
     border-radius: 3px;
     background-color: $color-accent;
     color: $color-secondary;
     font-family: $font-text;
     font-size: 0.875rem;
 }
-
-.divimage{
-    display:flex;
-    gap:20px;
-    }
-
 .imagediv{
     border: 1px solid $color-border;
     width:30px;
     height:30px;
+    margin-left: 2rem;
+    background-size: cover;
 }
 .collapsed {
     display:none;
