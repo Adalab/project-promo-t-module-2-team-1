@@ -9,12 +9,16 @@ const shareContainer = document.querySelector('.js-share-container');
 const rotateDesign = document.querySelector('.js-arrow-design');
 const rotatefill = document.querySelector('.js-arrow-fill');
 const rotateShare = document.querySelector('.js-arrow-share');
+//const tCreadA = document.querySelector('.js_Tcreada');
+
 
 function handlerClick1() {
   designContainer.classList.toggle('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   rotateDesign.classList.toggle('rotate');
+
+
 
 }
 
@@ -26,6 +30,7 @@ function handlerClick2(){
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   rotatefill.classList.toggle('rotate');
+
 }
 
 fillBox.addEventListener('click', handlerClick2);
@@ -35,6 +40,10 @@ function handlerClick3(){
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   rotateShare.classList.toggle('rotate');
+
+
+  //tCreadA.classList.toggle('collapsed');
+
 }
 
 shareBox.addEventListener('click', handlerClick3);

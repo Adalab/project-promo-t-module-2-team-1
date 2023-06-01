@@ -3,6 +3,7 @@
 const btn = document.querySelector('.js_boton');
 const tCreada = document.querySelector('.js_Tcreada');
 
+
 function clickColorDesplegable() {
   if (btn.classList.contains('fset__crearG')) {
     btn.classList.remove('fset__crearG');
@@ -14,6 +15,7 @@ function clickColorDesplegable() {
         <p class="link">aqui aparece un link</p>
         <button class="bnttwitter"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i> Compartir en twitter</button>`;
   }
+
 }
 
 btn.addEventListener('click', clickColorDesplegable);
@@ -22,12 +24,10 @@ btn.addEventListener('click', clickColorDesplegable);
 
 function clickedcolour() {
   btn.classList.add('fset__crearG');
+
 }
 
 btn.addEventListener('click', clickedcolour);
 
 
-/*<p class="tarjeta">La tarjeta ha sido creada:</p>
-                <p class="link">aqui aparece un link</p>
-                <button class="bnttwitter"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i> Compartir en twitter</button>*/
-// <div class="fset__crear collapsed js-share-container">
+
