@@ -9,7 +9,7 @@ const shareContainer = document.querySelector('.js-share-container');
 const rotateDesign = document.querySelector('.js-arrow-design');
 const rotatefill = document.querySelector('.js-arrow-fill');
 const rotateShare = document.querySelector('.js-arrow-share');
-//const tCreadA = document.querySelector('.js_Tcreada');
+const tCreadA = document.querySelector('.js_tcreada');
 
 
 function handlerClick1() {
@@ -42,7 +42,7 @@ function handlerClick3(){
   rotateShare.classList.toggle('rotate');
 
 
-  //tCreadA.classList.toggle('collapsed');
+  tCreadA.classList.toggle('collapsed');
 
 }
 

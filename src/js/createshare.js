@@ -25,6 +25,10 @@ btn.addEventListener('click', clickColorDesplegable);
 function clickedcolour() {
   btn.classList.add('fset__crearG');
 
+
+
+
+
 }
 
 btn.addEventListener('click', clickedcolour);
