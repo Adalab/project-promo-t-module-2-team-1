@@ -1,10 +1,11 @@
 .main {
+    // height: 70vh;
     background-color: $color-bg-landing;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     &__section1 {
         margin-bottom: 20px;
         &--title {
@@ -41,8 +42,6 @@
         }
     }
     &__button {
-        
-        
         text-align: center;
         background-color: $color-accent-two;
         color: $color-secondary;
@@ -53,11 +52,7 @@
         border-radius: 21px;
         font-size: 1rem;
         display: inline-block;
-        
         margin-top: 49px;
-        @media screen and (min-width: 768px) {
-                margin-top: 186px;
-            }
     }
 }
 
@@ -74,8 +69,6 @@
         font-size: 1rem;    
     }
 }
-
-
 
 .central_column {
     margin: 0 27px;

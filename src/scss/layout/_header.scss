@@ -4,16 +4,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
-  
+  // padding-top: 200px;
   &__header{
-   
     width: 250px;
     margin: 35px;
-    margin-top: 95px;
+    margin-top: 80px;
     @include tablet () {
       width: 420px;
-      
   }
   }
 }
