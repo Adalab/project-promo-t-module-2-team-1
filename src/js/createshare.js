@@ -27,8 +27,6 @@ function clickedcolour() {
 
 
 
-
-
 }
 
 btn.addEventListener('click', clickedcolour);
