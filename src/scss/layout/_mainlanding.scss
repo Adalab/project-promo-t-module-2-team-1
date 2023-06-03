@@ -1,10 +1,11 @@
 .main {
+    height: 50%;
     background-color: $color-bg-landing;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     &__section1 {
         margin-bottom: 20px;
         &--title {
