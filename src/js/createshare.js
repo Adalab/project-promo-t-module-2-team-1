@@ -11,6 +11,7 @@ function clickColorDesplegable() {
     btn.classList.add('fset__crearG');
     btn.classList.contains('fset__crearG');
 
+    tCreada.classList.remove('collapsed');
     tCreada.innerHTML = `<p class="tarjeta">La tarjeta ha sido creada:</p>
         <p class="link">aqui aparece un link</p>
         <button class="bnttwitter"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i> Compartir en twitter</button>`;

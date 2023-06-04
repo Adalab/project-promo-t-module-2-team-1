@@ -5,7 +5,10 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
-    border-bottom: 5px;
+    border-bottom: 1px solid $color-line;
+    margin-right: 20px;
+    margin-left: 40px;
+
     
     
     
@@ -19,12 +22,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 20px;
-    
-    
-    //border-bottom: 1px solid $color-line;
+    //margin-right: 20px;
     border-top: 1px solid $color-line;
-    margin-left: 40px;
+    //margin-left: 40px;
     
     &--containerOne{
         display: flex;
@@ -64,11 +64,9 @@
 
 .fset__crear{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    border-bottom: 1px solid $color-line;
-    margin-right: 20px;
-    margin-left: 40px;
+  
     
 }
 
@@ -85,7 +83,10 @@
     font-weight: 600;
     font-size: 1.125rem;
     height: 50px;
-    padding-right: 18px;
+    //padding-right: 18px;
+    width: 30%;
+    margin-left: 34%;
+
     
    
 }
@@ -102,10 +103,13 @@
     margin-top: 20px;
     font-size: 1.125rem;
     font-family: $font-text;
-    border-bottom: 1px solid $color-line;
-    margin-right: 20px;
-    margin-left: 40px;
+    border-top: 1px solid $color-line;
 
+    padding-top: 30px;
+
+}
+.fset__creada.collapsed{
+    border-top: 0px solid $color-line;
 }
 
 .fset__crearG{
@@ -150,7 +154,7 @@
 
 }
 .fa-address-card {
-    margin: 18px;
+    margin: 5px;
 }
 
 .collapsed {
@@ -165,3 +169,4 @@
 .subtitle {
     margin-left: 20px;
 }
+
