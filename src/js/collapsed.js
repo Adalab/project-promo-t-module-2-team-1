@@ -11,35 +11,56 @@ const rotatefill = document.querySelector('.js-arrow-fill');
 const rotateShare = document.querySelector('.js-arrow-share');
 
 
+function rotateArrow()  {
+  if (designContainer.classList.contains('collapsed')) {
+    rotateDesign.classList.remove('rotate');
+  }
+  else {
+    rotateDesign.classList.add('rotate');
+  }
+  if (fillContainer.classList.contains('collapsed')) {
+    rotatefill.classList.remove('rotate');
+  }else {
+    rotatefill.classList.add('rotate');
+  }
+  if (shareContainer.classList.contains('collapsed')) {
+    rotateShare.classList.remove('rotate');
+  } else {
+    rotateShare.classList.add('rotate');
+  }
+}
+
 
 function handlerClick1() {
-  designContainer.classList.toggle('collapsed');
+  designContainer.classList.remove('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
-  rotateDesign.classList.toggle('rotate');
+  rotateArrow();
 
 
 
 }
 
+
 designBox.addEventListener('click', handlerClick1);
 
 
+
 function handlerClick2(){
-  fillContainer.classList.toggle('collapsed');
+  fillContainer.classList.remove('collapsed');
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
-  rotatefill.classList.toggle('rotate');
+  rotateArrow();
 
 }
 
 fillBox.addEventListener('click', handlerClick2);
 
 function handlerClick3(){
-  shareContainer.classList.toggle('collapsed');
+  shareContainer.classList.remove('collapsed');
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
-  rotateShare.classList.toggle('rotate');
+  rotateArrow();
 
 }
 

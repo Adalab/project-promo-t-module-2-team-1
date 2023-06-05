@@ -104,6 +104,19 @@
      .card__links--box {
           border: solid 2px $color-border;
      }
+     .js_phoneIcon {
+          color: $color-subtitle;
+     }
+     .js_mailIcon {
+          color: $color-subtitle;
+     }
+     .js_linkedinIcon {
+          color: $color-subtitle;
+     }
+     .js_githubIcon {
+          color: $color-subtitle;
+     }
+
 }
 
 .pallete_style2 {
@@ -121,6 +134,18 @@
 
      .card__links--box {
           border: solid 2px $color-design-light-red;
+     }
+     .js_phoneIcon {
+          color: $color-design-dark-red;
+     }
+     .js_mailIcon {
+          color: $color-design-dark-red;
+     }
+     .js_linkedinIcon {
+          color: $color-design-dark-red;
+     }
+     .js_githubIcon {
+          color: $color-design-dark-red;
      }
 }
 
@@ -140,6 +165,18 @@
      .card__links--box {
           border: solid 2px $color-design-light-teal;
      }
+     .js_phoneIcon {
+          color: $color-design-dark-teal;
+     }
+     .js_mailIcon {
+          color: $color-design-dark-teal;
+     }
+     .js_linkedinIcon {
+          color: $color-design-dark-teal;
+     }
+     .js_githubIcon {
+          color: $color-design-dark-teal;
+     }
 }
 
 .fa-trash-can {
@@ -152,3 +189,4 @@
      position: relative;
      left: 2px;
 }
+
