@@ -14,7 +14,7 @@ const fillInput = document.querySelector('.js_allInputs');
 const data = {
   pallete:'',
   name: '',
-  job:' ' ,
+  job:'',
   image: '',
   profile: '',
   email: '',
