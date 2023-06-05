@@ -1,11 +1,14 @@
 .main {
-    height: 50%;
+    min-height: 67vh;
     background-color: $color-bg-landing;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     // padding-bottom: 40px;
+    @include tablet () {
+        height: 50vh;
+    }
     &__section1 {
         margin-bottom: 20px;
         &--title {
@@ -57,7 +60,7 @@
         
         margin-top: 49px;
         @media screen and (min-width: 768px) {
-                margin-top: 186px;
+                // margin-top: 186px;
             }
     }
 }
