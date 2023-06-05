@@ -8,6 +8,8 @@ const previewEmail = document.querySelector('.js_previewEmail');
 const previewPhone = document.querySelector('.js_previewPhone');
 const previewLinkedin = document.querySelector('.js_previewLinkedin');
 const previewGithub = document.querySelector('.js_previewGithub');
+const emailInput = document.querySelector('.js_email');
+const emailMessage = document.querySelector ('.js_emailMessage');
 
 const fillInput = document.querySelector('.js_allInputs');
 
@@ -56,6 +58,10 @@ function handleInputs(event){
   }
   renderPreview();
 }
+
+
+
+
 const fr = new FileReader();
 const fileField = document.querySelector('.js_imageBtn');
 const profileImage = document.querySelector('.js__profile-image');
@@ -73,4 +79,16 @@ function writeImage() {
 
 fillInput.addEventListener('keyup', handleInputs);
 fileField.addEventListener('change', getImage);
+emailInput.addEventListener('blur', handleEmail);
 
+
+function handleEmail (ev) {
+  const userEmail = emailInput.value;
+  ev.preventDefault();
+  debugger;
+  if (userEmail.includes ('@') && userEmail.includes('.')){
+    emailMessage.innerHTML= 'Este email es correcto';
+  }else {
+    emailMessage.innerHTML= 'Este email no es correcto.';
+  }
+}
