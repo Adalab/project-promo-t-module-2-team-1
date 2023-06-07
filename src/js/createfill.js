@@ -59,9 +59,6 @@ function handleInputs(event){
   renderPreview();
 }
 
-
-
-
 const fr = new FileReader();
 const fileField = document.querySelector('.js_imageBtn');
 const profileImage = document.querySelector('.js__profile-image');
@@ -85,7 +82,6 @@ emailInput.addEventListener('blur', handleEmail);
 function handleEmail (ev) {
   const userEmail = emailInput.value;
   ev.preventDefault();
-  debugger;
   if (userEmail.includes ('@') && userEmail.includes('.')){
     emailMessage.innerHTML= 'Este email es correcto';
   }else {
