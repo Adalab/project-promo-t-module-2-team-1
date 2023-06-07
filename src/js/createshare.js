@@ -64,22 +64,23 @@ function handleClickCreate(ev) {
   }else if (data.email === '') {
     emailMsg.innerHTML = 'campo obligatorio';
   }else {
-  fetch('https://dev.adalab.es/api/card/',{
-    method: 'POST',
-    headers: {'content-type':'application/json'},
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.success) {
-        link.innerHTML = data.cardURL;
-        link.href = data.cardURL;
-      }
-      else {
-        msg.innerHTML = data.error;
-      }
+    fetch('https://dev.adalab.es/api/card/',{
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify(data),
     })
-}}
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          link.innerHTML = data.cardURL;
+          link.href = data.cardURL;
+        }
+        else {
+          msg.innerHTML = data.error;
+        }
+      });
+  }}
+
 
 
 console.log(handleClickCreate);
