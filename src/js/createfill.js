@@ -10,14 +10,13 @@ const previewLinkedin = document.querySelector('.js_previewLinkedin');
 const previewGithub = document.querySelector('.js_previewGithub');
 const emailInput = document.querySelector('.js_email');
 const emailMessage = document.querySelector ('.js_emailMessage');
-
 const fillInput = document.querySelector('.js_allInputs');
 
 const data = {
-  pallete:'',
+  palette:'',
   name: '',
   job:'',
-  image: '',
+  photo: '',
   profile: '',
   email: '',
   phone: '',
@@ -25,11 +24,12 @@ const data = {
   github:'',
 };
 
+
 function renderPreview(){
   previewName.innerHTML=data.name || 'Nombre Apellido';
   previewJob.innerHTML=data.job || 'Front-end developer';
-  previewImage.href=`${data.image}`;
-  defaultImage.href=`${data.image}`;
+  previewImage.href=`${data.photo}`;
+  defaultImage.href=`${data.photo}`;
   previewEmail.href=`mailto:${data.email}`;
   previewPhone.href=`tel:${data.phone}`;
   previewLinkedin.href=`http://${data.linkedin}`;
@@ -43,8 +43,8 @@ function handleInputs(event){
     data.name = valueInput;
   }else if (idInput === 'job'){
     data.job = valueInput;
-  }else if (idInput === 'image'){
-    data.image = previewImage;
+  }else if (idInput === 'photo'){
+    data.photo = previewImage;
   }else if (idInput === 'profile'){
     data.profile = valueInput;
   }else if (idInput === 'email'){
@@ -72,6 +72,7 @@ function getImage(e){
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  data.photo = fr.result;
 }
 
 fillInput.addEventListener('keyup', handleInputs);

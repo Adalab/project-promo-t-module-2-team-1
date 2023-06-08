@@ -10,6 +10,7 @@ function handleClickRadio1(event) {
   previewCard.classList.remove('pallete_style2');
   previewCard.classList.remove('pallete_style3');
   previewCard.classList.add('pallete_style1');
+  data.palette = radio1.result;
 }
 
 function handleClickRadio2(event) {

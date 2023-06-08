@@ -5,19 +5,27 @@
 
 const buttonTrash = document.querySelector('.js_buttontrash');
 
-buttonTrash.addEventListener('click', handleTrash);
+
+
+
 
 //ELIMINAR DATO Y AÑADIR DATOS INCIALES
 function handleTrash() {
-    data.pallete= '';
+    data.palette= '';
     data.name= '';
     data.job= '';
-    data.image= '';
+    data.photo= '';
     data.profile= '';
     data.email= '';
     data.phone= '';
     data.linkedin= '';
     data.github= '';
+    profileImage.style.backgroundImage = '';
+    profilePreview.style.backgroundImage = '';
+    
+    
 renderPreview();
 }
-console.log('holii')
+console.log()
+
+buttonTrash.addEventListener('click', handleTrash);
