@@ -1,19 +1,58 @@
+.header{ 
+    
+    
+    
+  @include tablet () {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 .image {
-  background-color: $color-bg-landing;
-  display: flex;
+  background-image: url(../images/foto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 30vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @include tablet () {
+    
+    width: 80vw;
+  height: 50vh;
   
+  }
   
-  &__header{
-   
-    width: 250px;
-    margin: 35px;
-    margin-top: 95px;
+  &__header{ 
+    
+    
+    
     @include tablet () {
-      width: 420px;
       
+    }
   }
-  }
+}
+.bob {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  color: rgb(210, 216, 230);
+  font-family: $font-title;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin-top: 10px;
+  @include tablet () {
+    font-size: 4rem;
+    margin-top: 40px;
+    text-align: center;
+}
 }

@@ -1,5 +1,6 @@
 .imagecreate {
-  background-color: $color-bg-landing;
+  background-image: url(../images/images.png);;
+  background-image: cover;
   display: flex;
   flex-direction: row;
   align-items: center;

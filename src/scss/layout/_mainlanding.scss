@@ -1,18 +1,22 @@
 .main {
-    min-height: 67vh;
+    
     background-color: $color-bg-landing;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     // padding-bottom: 40px;
     @include tablet () {
-        height: 50vh;
+        
     }
     &__section1 {
         margin-bottom: 20px;
         &--title {
-            color: $color-accent;
+            color: rgb(13, 52, 112);
             font-family: $font-title;
             font-size: 1.2rem;
             padding-bottom: 8px;
@@ -48,7 +52,7 @@
         
         
         text-align: center;
-        background-color: $color-accent-two;
+        background-color: rgb(13, 52, 112);
         color: $color-secondary;
         text-decoration: none;
         text-transform: uppercase;
