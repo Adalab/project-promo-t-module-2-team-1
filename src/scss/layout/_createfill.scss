@@ -68,7 +68,7 @@
     height:30px;
     font-family: $font-text;
     font-size: 0.875rem;
-    color: $color-text-placeholder;
+    color: $color-text;
     }
 
 .imagebtn{
@@ -102,6 +102,12 @@
 }
 .rotate {
     rotate: 180deg;
+}
+.required {
+    font-family: $font-text;
+    margin-top: 5px;
+    color: $color-accent;
+
 }
 
 @media (min-width: 768px) {

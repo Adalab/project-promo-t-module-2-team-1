@@ -48,8 +48,8 @@ function renderPreview(){
   defaultImage.href=`${data.photo}`;
   previewEmail.href=`mailto:${data.email}`;
   previewPhone.href=`tel:${data.phone}`;
-  previewLinkedin.href=`http://${data.linkedin}`;
-  previewGithub.href=`http://${data.github}`;
+  previewLinkedin.href=`https://es.linkedin.com/in/${data.linkedin}`;
+  previewGithub.href=`https://github.com/${data.github}`;
 }
 
 function handleInputs(event){
