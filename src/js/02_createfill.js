@@ -12,6 +12,21 @@ const emailInput = document.querySelector('.js_email');
 const emailMessage = document.querySelector ('.js_emailMessage');
 const fillInput = document.querySelector('.js_allInputs');
 
+// function generarNumeroAleatorio() {
+//   let numero = -1; // Inicializamos el número con un valor negativo
+
+//   while (numero < 0) {
+//     numero = Math.floor(Math.random() * 100); // Genera un número aleatorio entre 0 y 99 (inclusive)
+
+//     // Si el número es negativo, lo generamos nuevamente
+//     if (numero < 0) {
+//       continue;
+//     }
+//   }
+
+//   return numero;
+// }
+
 const data = {
   palette:'',
   name: '',
@@ -21,6 +36,8 @@ const data = {
   phone: '',
   linkedin: '',
   github:'',
+  // profile:'1',
+  // id:generarNumeroAleatorio(),
 };
 
 
@@ -53,6 +70,8 @@ function handleInputs(event){
     data.linkedin = valueInput;
   }else if (idInput === 'github'){
     data.github = valueInput;
+  // }else if (idInput === 'profile'){
+  //   data.profile = valueInput;
   }else if (idInput.includes('option')) {
     data.palette = valueInput;
    

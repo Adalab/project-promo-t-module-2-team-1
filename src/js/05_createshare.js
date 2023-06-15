@@ -26,66 +26,49 @@ function clickedcolour() {
 btn.addEventListener('click', clickedcolour);
 
 const link = document.querySelector('.js_link');
-const msg = document.querySelector('.js_msg');
+let msg = document.querySelector('.js_msg');
 const nameMsg = document.querySelector('.js_name_msg');
 const jobMsg = document.querySelector('.js_job_msg');
 const imageMsg = document.querySelector('.js_image_msg');
 const emailMsg = document.querySelector('.js_email_msg');
 const linkedinMsg = document.querySelector('.js_linkedin_msg');
-const githubMsg = document.querySelector('.js_github_msg')
+const githubMsg = document.querySelector('.js_github_msg');
+const msgGeneral = document.querySelector('.js_msgGeneral');
+
+
 
 const cardLS = JSON.parse(localStorage.getItem('dataLocalStorage'));
-// function handleClickCreate(ev) {
-//   ev.preventDefault();
-//   if(cardLS.success) {
-//     fetch('https://dev.adalab.es/api/card/',{
-//       method: 'POST',
-//       headers: {'Content-Type': 'application/json'},
-//       body: JSON.stringify(data),
-//     })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       link.innerHTML = data.cardURL;
-//       link.href = data.cardURL;
-//     });
-//   }
-//   else {
-//     msg = data.error;
-//   }
+
+function handleClickCreate(ev) {
+  ev.preventDefault();
+  // if(cardLS.name === '' || cardLS.job === '' || cardLS.photo === '' || cardLS.email === '' || cardLS.linkedin === '' || cardLS.github === '') {
+  //   msgGeneral.innerHTML = 'error';
+  // }
+  // else if(cardLS.name !== '' && cardLS.job !== '' && cardLS.photo !== '' && cardLS.email !== '' && cardLS.linkedin !== '' && cardLS.github !== ''){
+  
+  fetch('https://dev.adalab.es/api/card',{
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((cardLS) => {
+      console.log(cardLS.cardURL);
+      if(cardLS.success === true){
+        link.innerHTML = `<a class=" link js_link target="_blank" href="https://dev.adalab.es/api/card${cardLS.cardURL}">https://dev.adalab.es/api/card${cardLS.cardURL}</a>`;
+      }else {
+        msg = cardLS.error;
+      }
+    });
+}
 
 // };
 
 
 // console.log(handleClickCreate);
 
-// if (newKittenDataObject.desc === "" || newKittenDataObject.image === "" || newKittenDataObject.name === "") {
-//   labelMessageError.innerHTML = "¡Uy! parece que has olvidado algo";
-// }
-// else if (newKittenDataObject.desc !== "" && newKittenDataObject.image !== "" && newKittenDataObject.name!== "") {
-  
-//   //  hacer peticion al servidor con la info obtenida de addNewKitten
 
-// fetch(SERVER_URL, {
-//   method: 'POST',
-//   headers: {'Content-Type': 'application/json'},
-//   body: JSON.stringify(newKittenDataObject),
-// })
-//   .then((response) => response.json())
-//   .then((data) => {
-//     if (data.success) {
-//       labelMessageError.innerHTML = "Mola! Un nuevo gatito en adalab!";
-//       kittenDataList.push(newKittenDataObject);
-//       renderKittenList(kittenDataList);
-//       localStorage.setItem('kittensList', JSON.stringify(kittenDataList));
-//     } else {
-//       alert('Error: ' + data.message);
-//     }
-//   });
-  
-// }
-// }
-
-// btn.addEventListener('click', handleClickCreate);
+btn.addEventListener('click', handleClickCreate);
 
 const fillInputs= document.querySelector('.js_fillinputs');
 function changeInput() {
