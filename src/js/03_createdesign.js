@@ -10,19 +10,21 @@ function handleClickRadio1(event) {
   previewCard.classList.remove('pallete_style2');
   previewCard.classList.remove('pallete_style3');
   previewCard.classList.add('pallete_style1');
-  data.palette = radio1.result;
+  data.palette = "1";
 }
 
 function handleClickRadio2(event) {
   previewCard.classList.remove('pallete_style1');
   previewCard.classList.remove('pallete_style3');
   previewCard.classList.add('pallete_style2');
+  data.palette = "2";
 }
 
 function handleClickRadio3(event) {
   previewCard.classList.remove('pallete_style1');
   previewCard.classList.remove('pallete_style2');
   previewCard.classList.add('pallete_style3');
+  data.palette = "3";
 }
 
 radio1.addEventListener('click', handleClickRadio1);

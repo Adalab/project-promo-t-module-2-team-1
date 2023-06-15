@@ -8,7 +8,6 @@ const buttonTrash = document.querySelector('.js_buttontrash');
 
 
 
-
 //ELIMINAR DATO Y AÑADIR DATOS INCIALES
 function handleTrash() {
     data.palette= '';
@@ -22,8 +21,6 @@ function handleTrash() {
     data.github= '';
     profileImage.style.backgroundImage = '';
     profilePreview.style.backgroundImage = '';
-    
-    
 renderPreview();
 }
 console.log()

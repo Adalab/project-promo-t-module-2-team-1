@@ -17,7 +17,6 @@ const data = {
   name: '',
   job:'',
   photo: '',
-  profile: '',
   email: '',
   phone: '',
   linkedin: '',
@@ -39,14 +38,13 @@ function renderPreview(){
 function handleInputs(event){
   const idInput = event.target.id;
   const valueInput = event.target.value;
+  console.log(valueInput);
   if( idInput==='name' ){
     data.name = valueInput;
   }else if (idInput === 'job'){
     data.job = valueInput;
   }else if (idInput === 'photo'){
     data.photo = previewImage;
-  }else if (idInput === 'profile'){
-    data.profile = valueInput;
   }else if (idInput === 'email'){
     data.email = valueInput;
   }else if (idInput === 'phone'){
@@ -55,9 +53,16 @@ function handleInputs(event){
     data.linkedin = valueInput;
   }else if (idInput === 'github'){
     data.github = valueInput;
+  }else if (idInput.includes('option')) {
+    data.palette = valueInput;
+   
   }
   renderPreview();
+  localStorage.setItem('dataLocalStorage', JSON.stringify(data));
+  
 }
+
+
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js_imageBtn');
